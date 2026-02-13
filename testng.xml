@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Desktop Mobile Browser">
+    <listeners>
+        <listener class-name="listeners.TestExecutionFlakyListener"/>
+        <listener class-name="listeners.TestFailureListener"/>
+    </listeners>
+
+    <test name="Tests">
+        <classes>
+            <class name="tests.TwitchTest"/>
+        </classes>
+    </test>
+</suite>
